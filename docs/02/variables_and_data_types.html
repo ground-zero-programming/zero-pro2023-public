@@ -62,6 +62,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/02/variables_and_data_types';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -493,7 +495,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="id1">
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>第2回：変数とデータ型（講義）<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
 <p>担当：相澤宏旭</p>
 <section id="id2">
@@ -509,12 +511,12 @@ document.write(`
 <section id="id3">
 <h2>変数とは？<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
 <p>我々は <strong>プログラミング言語</strong> を介してコンピュータに任意の <strong>演算</strong> を指示することができる．演算とは四則演算や文字列処理などの小さなものであるが，これらの演算を組み合わせることで様々なソフトウェアを作成することができる．講義科目名にもある <strong>プログラミング</strong> とはプログラミング言語を介して何らかの演算をさせることである．プログラミングの第一歩として，第2回目の講義では，演算を実行するために必要なデータを取り扱う <strong>変数（Variable）</strong> について学ぶ．</p>
-<p>変数とは中学の数学で学んだ方程式 $y=2x+1$ における変数 $x,y$ と同じようなものである．式上では変数に具体的な数値は格納されていないが，我々は $x=10$ のように変数 $x$ に具体的な値 $10$ を代入したときの $y$ の値を計算できる．この処理をコンピュータで実行することをイメージされたい．必要な情報は演算 $y=2x+1$ と変数 $x,y$ の定義，そして変数への代入 $x=10$ である．では，この情報と処理をコンピュータにどのように演算として指示をすればいいだろうか？</p>
+<p>変数とは中学の数学で学んだ方程式 <span class="math notranslate nohighlight">\(y=2x+1\)</span> における変数 <span class="math notranslate nohighlight">\(x,y\)</span> と同じようなものである．式上では変数に具体的な数値は格納されていないが，我々は <span class="math notranslate nohighlight">\(x=10\)</span> のように変数 <span class="math notranslate nohighlight">\(x\)</span> に具体的な値 <span class="math notranslate nohighlight">\(10\)</span> を代入したときの <span class="math notranslate nohighlight">\(y\)</span> の値を計算できる．この処理をコンピュータで実行することをイメージされたい．必要な情報は演算 <span class="math notranslate nohighlight">\(y=2x+1\)</span> と変数 <span class="math notranslate nohighlight">\(x,y\)</span> の定義，そして変数への代入 <span class="math notranslate nohighlight">\(x=10\)</span> である．では，この情報と処理をコンピュータにどのように演算として指示をすればいいだろうか？</p>
 <p>以降，Pythonを使ってこの演算を実行する．</p>
 <section id="id4">
 <h3>変数に値を代入する<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
-<p>始めに，式を定義する前に，変数 $x$ に値 $10$ を代入する処理を学ぶ．この処理には変数 $x$ の定義と値 $10$ の代入という処理が含まれる．</p>
-<p>プログラミングにおける変数と代入を理解するためにはコンピュータ上でのデータの管理方法のイメージを掴む必要がある．詳細は省略するが，コンピュータはデータ（ここでは値 $10$）を <strong>メモリ</strong> 上で管理している．メモリは図に示すようにコンピュータ上の記憶領域である．また，記憶領域上の位置は <strong>アドレス</strong> とも呼ばれる．コンピュータはメモリに記録された値と演算時に参照するメモリ位置を使って変数を管理している．</p>
+<p>始めに，式を定義する前に，変数 <span class="math notranslate nohighlight">\(x\)</span> に値 <span class="math notranslate nohighlight">\(10\)</span> を代入する処理を学ぶ．この処理には変数 <span class="math notranslate nohighlight">\(x\)</span> の定義と値 <span class="math notranslate nohighlight">\(10\)</span> の代入という処理が含まれる．</p>
+<p>プログラミングにおける変数と代入を理解するためにはコンピュータ上でのデータの管理方法のイメージを掴む必要がある．詳細は省略するが，コンピュータはデータ（ここでは値 <span class="math notranslate nohighlight">\(10\)</span>）を <strong>メモリ</strong> 上で管理している．メモリは図に示すようにコンピュータ上の記憶領域である．また，記憶領域上の位置は <strong>アドレス</strong> とも呼ばれる．コンピュータはメモリに記録された値と演算時に参照するメモリ位置を使って変数を管理している．</p>
 <p><img alt="" src="../../_images/var.png" /></p>
 <p>実際には上図に示すように変数が格納されたメモリのアドレスはコンピュータによって自動的につけられた記号になっている．我々人間が演算に必要なすべてのアドレスを把握し管理するのは困難であるが，プログラミング言語では変数に名前をつけることで我々でもデータの値が格納されたメモリ位置を容易に管理できる（例えば変数名 <code class="docutils literal notranslate"><span class="pre">x</span></code> など）．この仕組みにより，人間が読めるプログラミング言語として任意のデータの <strong>代入</strong> や変数の中身のデータを <strong>参照</strong> できる．</p>
 <p><img alt="" src="../../_images/assign.png" /></p>
@@ -529,7 +531,7 @@ document.write(`
 </div>
 <div class="admonition- admonition">
 <p class="admonition-title">変数定義のルール</p>
-<p>数学で学ぶ $=$ は右辺と左辺が <strong>等しい</strong> ことを，プログラミングの <code class="docutils literal notranslate"><span class="pre">=</span></code> は値を変数に <strong>代入する</strong> ことを示す．意味が異なることに注意されたい．</p>
+<p>数学で学ぶ <span class="math notranslate nohighlight">\(=\)</span> は右辺と左辺が <strong>等しい</strong> ことを，プログラミングの <code class="docutils literal notranslate"><span class="pre">=</span></code> は値を変数に <strong>代入する</strong> ことを示す．意味が異なることに注意されたい．</p>
 </div>
 </section>
 <section id="id5">
@@ -564,7 +566,7 @@ document.write(`
 </section>
 <section id="id6">
 <h3>式を計算する<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
-<p>前述した方程式 $y=2x+1$ の右辺を変数 $x=10$ として計算する．詳細は後述するが，Pythonでは数値同士の四則演算がサポートされている．足し算は <code class="docutils literal notranslate"><span class="pre">+</span></code> 演算子，掛け算は <code class="docutils literal notranslate"><span class="pre">*</span></code> 演算子で実行することができる．</p>
+<p>前述した方程式 <span class="math notranslate nohighlight">\(y=2x+1\)</span> の右辺を変数 <span class="math notranslate nohighlight">\(x=10\)</span> として計算する．詳細は後述するが，Pythonでは数値同士の四則演算がサポートされている．足し算は <code class="docutils literal notranslate"><span class="pre">+</span></code> 演算子，掛け算は <code class="docutils literal notranslate"><span class="pre">*</span></code> 演算子で実行することができる．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
@@ -577,7 +579,7 @@ document.write(`
 </div>
 </div>
 </div>
-<p>実際の計算結果と一致することがわかる．続いて，左辺について変数 $y$ に上式の結果を代入する処理を実装する．代入は <code class="docutils literal notranslate"><span class="pre">=</span></code> で実行できる．</p>
+<p>実際の計算結果と一致することがわかる．続いて，左辺について変数 <span class="math notranslate nohighlight">\(y\)</span> に上式の結果を代入する処理を実装する．代入は <code class="docutils literal notranslate"><span class="pre">=</span></code> で実行できる．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
@@ -585,7 +587,7 @@ document.write(`
 </div>
 </div>
 </div>
-<p>変数 $y$ の値を <code class="docutils literal notranslate"><span class="pre">print</span></code> 文で確認されたい．計算結果が代入されていることがわかる．</p>
+<p>変数 <span class="math notranslate nohighlight">\(y\)</span> の値を <code class="docutils literal notranslate"><span class="pre">print</span></code> 文で確認されたい．計算結果が代入されていることがわかる．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
@@ -602,7 +604,7 @@ document.write(`
 <section id="id7">
 <h3>代入した値を変更する<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
 <p><img alt="" src="../../_images/reassign.png" /></p>
-<p>では，最後に，変数 $x$ の中身を変更することを試みる．上記の代入手順を再度行うことで変数の中身を新たなデータで更新できる．</p>
+<p>では，最後に，変数 <span class="math notranslate nohighlight">\(x\)</span> の中身を変更することを試みる．上記の代入手順を再度行うことで変数の中身を新たなデータで更新できる．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">100</span>
@@ -622,7 +624,7 @@ document.write(`
 </div>
 </div>
 </div>
-<p>再代入した変数 $x$ で前述の式を計算してみる．</p>
+<p>再代入した変数 <span class="math notranslate nohighlight">\(x\)</span> で前述の式を計算してみる．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
@@ -636,7 +638,7 @@ document.write(`
 </div>
 </div>
 </div>
-<p>結果が変わったことがわかる．$y=2x+1$ の $x$ に値を代入し式を計算するシンプルな問題を通して変数と演算のイメージを掴んでいただきたい．</p>
+<p>結果が変わったことがわかる．<span class="math notranslate nohighlight">\(y=2x+1\)</span> の <span class="math notranslate nohighlight">\(x\)</span> に値を代入し式を計算するシンプルな問題を通して変数と演算のイメージを掴んでいただきたい．</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>前述の説明はプログラミングの導入として非常に簡略化された説明である．そのため，メモリの仕組みやプログラムの処理手順については専門課程での講義に任せたい．また，情報系学生だけでなくより深く計算機科学について理解したい学生はサポートページ内の <a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2022-public/docs/advanced_materials.html">さらに勉強したい方へ</a> を参照されたい．</p>
@@ -695,9 +697,9 @@ document.write(`
 </section>
 <section id="id11">
 <h2>数値データ<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h2>
-<p><strong>数値データ型</strong> は整数（$1$, $-10$,…），浮動小数点数（$3.14$, $-0.01$,…），複素数（$2+3i$，$5-2i$,…）といった数値を扱う際に定義される変数である．前述したようにPythonでは代入時の数値に応じて動的に変数の型が定義される．Pythonではスカラーだけでなくベクトルや行列もサポートされている．演算のために<a class="reference external" href="https://numpy.org">Numpy</a>と呼ばれる数値計算ライブラリが一般的に利用されるが，詳細は第10回以降のPythonの応用場面で紹介する．ここでは，代表的な数値データ型である<code class="docutils literal notranslate"><span class="pre">int</span></code>型と<code class="docutils literal notranslate"><span class="pre">float</span></code>型を紹介する．これらはそれぞれ整数値と浮動小数点数を扱うデータ型である．</p>
+<p><strong>数値データ型</strong> は整数（<span class="math notranslate nohighlight">\(1\)</span>, <span class="math notranslate nohighlight">\(-10\)</span>,…），浮動小数点数（<span class="math notranslate nohighlight">\(3.14\)</span>, <span class="math notranslate nohighlight">\(-0.01\)</span>,…），複素数（<span class="math notranslate nohighlight">\(2+3i\)</span>，<span class="math notranslate nohighlight">\(5-2i\)</span>,…）といった数値を扱う際に定義される変数である．前述したようにPythonでは代入時の数値に応じて動的に変数の型が定義される．Pythonではスカラーだけでなくベクトルや行列もサポートされている．演算のために<a class="reference external" href="https://numpy.org">Numpy</a>と呼ばれる数値計算ライブラリが一般的に利用されるが，詳細は第10回以降のPythonの応用場面で紹介する．ここでは，代表的な数値データ型である<code class="docutils literal notranslate"><span class="pre">int</span></code>型と<code class="docutils literal notranslate"><span class="pre">float</span></code>型を紹介する．これらはそれぞれ整数値と浮動小数点数を扱うデータ型である．</p>
 <p><img alt="" src="../../_images/num.png" /></p>
-<p>発展的な内容であるが複素数（$2+3i$，$5-2i$,…）は<code class="docutils literal notranslate"><span class="pre">complex</span></code>型として定義される．</p>
+<p>発展的な内容であるが複素数（<span class="math notranslate nohighlight">\(2+3i\)</span>，<span class="math notranslate nohighlight">\(5-2i\)</span>,…）は<code class="docutils literal notranslate"><span class="pre">complex</span></code>型として定義される．</p>
 <section id="id12">
 <h3>代表的な数値データ型<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h3>
 <section id="int">
@@ -895,7 +897,7 @@ document.write(`
 </div>
 </div>
 </div>
-<p>冪乗の計算は<code class="docutils literal notranslate"><span class="pre">**</span></code>で実行できる．例：$a^{b}$</p>
+<p>冪乗の計算は<code class="docutils literal notranslate"><span class="pre">**</span></code>で実行できる．例：<span class="math notranslate nohighlight">\(a^{b}\)</span></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">**</span><span class="n">b</span>
@@ -1129,7 +1131,7 @@ lo
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">文字列</span><span class="p">[</span><span class="n">インデックス</span><span class="p">]</span>
 </pre></div>
 </div>
-<p>注意点として先頭は $0$ 番目から始まる．そのため $0$ から開始して参照したい要素のインデックスを数える必要があることに注意されたい．また，インデックスを指定して要素を参照する処理を <strong>インデキシング（indexing）</strong> と呼ぶ．</p>
+<p>注意点として先頭は <span class="math notranslate nohighlight">\(0\)</span> 番目から始まる．そのため <span class="math notranslate nohighlight">\(0\)</span> から開始して参照したい要素のインデックスを数える必要があることに注意されたい．また，インデックスを指定して要素を参照する処理を <strong>インデキシング（indexing）</strong> と呼ぶ．</p>
 <p>文字列<code class="docutils literal notranslate"><span class="pre">&quot;Hello&quot;</span></code>が格納された<code class="docutils literal notranslate"><span class="pre">str</span></code>型の変数<code class="docutils literal notranslate"><span class="pre">s</span></code>を定義し，各要素を参照する．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1242,7 +1244,7 @@ lo
 </div>
 </div>
 </div>
-<p>あるインデックス$i$から文字列の末尾までを部分文字列として参照する際は終了インデックスを省略できる．</p>
+<p>あるインデックス<span class="math notranslate nohighlight">\(i\)</span>から文字列の末尾までを部分文字列として参照する際は終了インデックスを省略できる．</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">文字列</span><span class="p">[</span><span class="n">開始インデックス</span><span class="p">:]</span>
 </pre></div>
 </div>
@@ -1272,7 +1274,7 @@ lo
 </div>
 </div>
 </div>
-<p>文字列の最初の最初の文字（<code class="docutils literal notranslate"><span class="pre">0</span></code>インデックス）からあるインデックス$j$までを部分文字列として参照する際は開始インデックスを省略できる．</p>
+<p>文字列の最初の最初の文字（<code class="docutils literal notranslate"><span class="pre">0</span></code>インデックス）からあるインデックス<span class="math notranslate nohighlight">\(j\)</span>までを部分文字列として参照する際は開始インデックスを省略できる．</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">文字列</span><span class="p">[:</span><span class="n">終了インデックス</span><span class="p">]</span>
 </pre></div>
 </div>
@@ -1302,7 +1304,7 @@ lo
 </div>
 </div>
 </div>
-<p>開始インデックス$i$から終了インデックス$j$まで$k$文字ごとに参照する場合は以下で書ける．</p>
+<p>開始インデックス<span class="math notranslate nohighlight">\(i\)</span>から終了インデックス<span class="math notranslate nohighlight">\(j\)</span>まで<span class="math notranslate nohighlight">\(k\)</span>文字ごとに参照する場合は以下で書ける．</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">文字列</span><span class="p">[</span><span class="n">開始インデックス</span><span class="p">:</span><span class="n">終了インデックス</span><span class="p">:</span><span class="n">スキップ数</span><span class="p">]</span>
 </pre></div>
 </div>
@@ -1430,7 +1432,7 @@ lo
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">リスト</span><span class="p">[</span><span class="n">インデックス</span><span class="p">]</span>
 </pre></div>
 </div>
-<p>リスト型においてもインデックスはリスト内の要素番号を示し，$0$番目から開始する．</p>
+<p>リスト型においてもインデックスはリスト内の要素番号を示し，<span class="math notranslate nohighlight">\(0\)</span>番目から開始する．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">]</span>
@@ -1801,7 +1803,7 @@ lo
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4306365008
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4378356304
 </pre></div>
 </div>
 </div>
@@ -2245,7 +2247,7 @@ lo
 <h3><code class="docutils literal notranslate"><span class="pre">str</span></code>型から<code class="docutils literal notranslate"><span class="pre">int</span></code>型へ，<code class="docutils literal notranslate"><span class="pre">int</span></code>型から<code class="docutils literal notranslate"><span class="pre">str</span></code>型への変換<a class="headerlink" href="#strint-intstr" title="Permalink to this heading">#</a></h3>
 <section id="id42">
 <h4>意図した例<a class="headerlink" href="#id42" title="Permalink to this heading">#</a></h4>
-<p>数値$2$が格納された変数<code class="docutils literal notranslate"><span class="pre">x</span></code>を$3$倍した結果を変数$y$に代入する．</p>
+<p>数値<span class="math notranslate nohighlight">\(2\)</span>が格納された変数<code class="docutils literal notranslate"><span class="pre">x</span></code>を<span class="math notranslate nohighlight">\(3\)</span>倍した結果を変数<span class="math notranslate nohighlight">\(y\)</span>に代入する．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
