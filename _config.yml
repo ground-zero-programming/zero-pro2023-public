@@ -4,7 +4,7 @@
 title: ゼロから始めるプログラミング
 author: Hiroaki Aizawa & Akira Furui
 copyright: "2023 (CC BY 4.0)"
-logo: cat_mov.gif
+logo: logo_dalle3.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
