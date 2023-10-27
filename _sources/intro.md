@@ -35,7 +35,7 @@
 | [第2回：変数（講義）](docs/02/variables_and_data_types.ipynb) | [Play](https://hiroshimauniv-my.sharepoint.com/:v:/g/personal/furui_hiroshima-u_ac_jp/EfefwxlYkJdLhZpcJT7XYdABhpc2svt1QGBUvD6qWH1Cjg) | - | - |
 | [第3回：変数（演習）](docs/03/exercise_variables_and_data_types.ipynb) | - | <strike>10/19</strike> | [Open](docs/03_ans/answer_variables_and_data_types.ipynb) |
 | [第4回：条件分岐（講義）](docs/04/conditional_branch.ipynb) | [Play](https://hiroshimauniv-my.sharepoint.com/:v:/g/personal/furui_hiroshima-u_ac_jp/Eer44naRt_lKi05D7mFM6mABf1yltHbcE8DoB1Ak7t5sMg) | - | - |
-| [第5回：条件分岐（演習）](docs/05/exercise_conditional_branch.ipynb) | - | 10/26 | 10/27公開 |
+| [第5回：条件分岐（演習）](docs/05/exercise_conditional_branch.ipynb) | - | <strike>10/26</strike> | [Open](docs/05_ans/answer_conditional_branch.ipynb) |
 | [第6回：繰り返し処理（講義）](docs/06/loops.ipynb) | [Play](https://hiroshimauniv-my.sharepoint.com/:v:/g/personal/furui_hiroshima-u_ac_jp/ETyk5dmNkkVFscBx71-IdroBVbtxO1PzlBZsbBfII0v2Hg) | - | - |
 | [第7回：繰り返し処理（演習）](docs/07/exercise_loops.ipynb)  | - | 11/2 | 11/3公開 |
 | 第8回：関数（講義） | 準備中 | - | - |
