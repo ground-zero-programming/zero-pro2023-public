@@ -38,8 +38,8 @@
 | [第5回：条件分岐（演習）](docs/05/exercise_conditional_branch.ipynb) | - | <strike>10/26</strike> | [Open](docs/05_ans/answer_conditional_branch.ipynb) |
 | [第6回：繰り返し処理（講義）](docs/06/loops.ipynb) | [Play](https://hiroshimauniv-my.sharepoint.com/:v:/g/personal/furui_hiroshima-u_ac_jp/ETyk5dmNkkVFscBx71-IdroBVbtxO1PzlBZsbBfII0v2Hg) | - | - |
 | [第7回：繰り返し処理（演習）](docs/07/exercise_loops.ipynb)  | - | 11/2 | 11/3公開 |
-| 第8回：関数（講義） | 準備中 | - | - |
-| 第9回：関数（演習） |- | 11/9 | 11/10公開 |
+| [第8回：関数（講義）](./docs/08/functions_and_scope.ipynb) | [Play](https://hiroshimauniv-my.sharepoint.com/:v:/g/personal/furui_hiroshima-u_ac_jp/EbwTG6uP3tZCp4dMUSNi8TIBq4fukeg5uN94q2NGA40Ilw?e=Kvazg4) | - | - |
+| [第9回：関数（演習）](./docs/09/exercise_functions_and_scope.ipynb) |- | 11/9 | 11/10公開 |
 | 第10回：クラス（講義） | 準備中 | - | - |
 | 第11回：クラス（演習） | - | 11/16 | 11/17公開 |
 | 第12回：データ分析入門（講義） | 準備中 | - | - |
