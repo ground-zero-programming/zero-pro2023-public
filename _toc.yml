@@ -15,8 +15,8 @@ parts:
     - file: docs/07/exercise_loops
     - file: docs/08/functions_and_scope
     - file: docs/09/exercise_functions_and_scope
-    - file: docs/10/application
-    - file: docs/11/exercise_application
+    - file: docs/10/class
+    - file: docs/11/exercise_class
     - file: docs/12/introduction_to_data_analysis
     - file: docs/13/exercise_introduction_to_data_analysis
     - file: docs/14/introduction_to_machine_learning
