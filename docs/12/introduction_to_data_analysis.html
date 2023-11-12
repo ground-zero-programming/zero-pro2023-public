@@ -752,12 +752,12 @@ Seriesは1次元（列形式）のデータ，DataFrameは2次元（行列形式
 <section id="id8">
 <h3>データの読み込み<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
 <p>今回は，<a class="reference external" href="http://kogolab.chillout.jp/elearn/icecream/index.html">アイスクリーム屋さんで学ぶ楽しい統計学</a> というサイトで公開されている架空のデータを用いてデータ分析に取り組んでいく．</p>
-<p>まず，第10回の時と同じ手順で，当該データをダウンロードしよう．
+<p>まず，当該データをダウンロードしよう．
 以下のセルを実行すると，<code class="docutils literal notranslate"><span class="pre">data</span></code> フォルダの中に <code class="docutils literal notranslate"><span class="pre">ice_cream.csv</span></code> というファイルがダウンロードされる．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>mkdir data
-<span class="o">!</span>wget -P data https://raw.githubusercontent.com/ground-zero-programming/zero-pro2022-public/main/docs/12/data/ice_cream.csv
+<span class="o">!</span>wget -P data https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/12/data/ice_cream.csv
 </pre></div>
 </div>
 </div>
@@ -770,7 +770,9 @@ Seriesは1次元（列形式）のデータ，DataFrameは2次元（行列形式
 </div>
 </div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">ice_cream.csv</span></code>には，あるアイスクリームチェーン店における8月の客数データ（2週間 = 14日分）が格納されている．
+<p>本講義の範囲内では上記のコードが何をやっているかを意識する必要はないが，簡単に説明しよう．
+<code class="docutils literal notranslate"><span class="pre">!mkdir</span> <span class="pre">data</span></code>でGoogle Colab内に<code class="docutils literal notranslate"><span class="pre">data</span></code>という名前がついたフォルダを作成し，以降の<code class="docutils literal notranslate"><span class="pre">!wget</span> <span class="pre">-P</span> <span class="pre">data</span> <span class="pre">{URL}</span></code>で<code class="docutils literal notranslate"><span class="pre">URL</span></code>にあるファイルを先ほど作成した<code class="docutils literal notranslate"><span class="pre">data</span></code>フォルダにダウンロードするという操作をしている．</p>
+<p>さて， <code class="docutils literal notranslate"><span class="pre">ice_cream.csv</span></code>には，あるアイスクリームチェーン店における8月の客数データ（2週間 = 14日分）が格納されている．
 このファイルは <strong>CSVファイル</strong> と呼ばれ，以下のように各データの間がコンマ <code class="docutils literal notranslate"><span class="pre">,</span></code> で区切られている．</p>
 <div class="highlight-csv notranslate"><div class="highlight"><pre><span></span>日付, 最高気温, 客数
 1, 29, 312
