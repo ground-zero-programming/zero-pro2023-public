@@ -22,7 +22,8 @@ parts:
     - file: docs/14/introduction_to_machine_learning
     - file: docs/15/exercise_introduction_to_machine_learning
   - caption: 補足情報
-    chapters:   
+    chapters:
+    - file: docs/exam.md
     - file: docs/submission/submission.md 
     - file: docs/advanced_materials.md
     - file: docs/references.md

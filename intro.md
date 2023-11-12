@@ -5,6 +5,8 @@
 担当教員：相澤宏旭，古居彬
 
 ````{card} お知らせ
+- [【重要】期末試験に関する情報](docs/exam.md) を追加しました（2023/11/13）
+- 第12回〜15回までの資料を一括公開しました．課題の締切も同日なので，注意してください（2023/11/13）
 - [第7回課題における誤りを修正](./docs/correction.md)しました（2023/10/25）
 - 本ページを公開しました（2023/09/29）
 
@@ -22,7 +24,7 @@
 - Microsoft Teams上に各クラスのチームが作成されています．
   - Teamsでは，講義内容に関する質問対応や，課題提出などを行います．
 - 期末試験はTeams上で行います．
-  - 期末試験の情報は試験日程が近づいたら記載します．
+  - 受験は必須です．必ず詳細を確認のうえ期間中に受験してください（→ [期末試験に関する情報](docs/exam.md)）
 
 ## 講義資料
 
@@ -39,13 +41,13 @@
 | [第6回：繰り返し処理（講義）](docs/06/loops.ipynb) | [Play](https://hiroshimauniv-my.sharepoint.com/:v:/g/personal/furui_hiroshima-u_ac_jp/ETyk5dmNkkVFscBx71-IdroBVbtxO1PzlBZsbBfII0v2Hg) | - | - |
 | [第7回：繰り返し処理（演習）](docs/07/exercise_loops.ipynb)  | - | <strike>11/2</strike> | [Open](./docs/07_ans/answer_loops.ipynb) |
 | [第8回：関数（講義）](./docs/08/functions_and_scope.ipynb) | [Play](https://hiroshimauniv-my.sharepoint.com/:v:/g/personal/furui_hiroshima-u_ac_jp/EbwTG6uP3tZCp4dMUSNi8TIBq4fukeg5uN94q2NGA40Ilw?e=Kvazg4) | - | - |
-| [第9回：関数（演習）](./docs/09/exercise_functions_and_scope.ipynb) |- | 11/9 | 11/10公開 |
+| [第9回：関数（演習）](./docs/09/exercise_functions_and_scope.ipynb) |- | <strike>11/9 </strike>| [Open](./docs/09_ans/answer_functions_and_scope.ipynb) |
 | [第10回：クラス（講義）](./docs/10/class.ipynb) | [Play](https://hiroshimauniv-my.sharepoint.com/:v:/g/personal/furui_hiroshima-u_ac_jp/EerfC9-mm5pDueQ_-L3vD6AB1a9efggEwWlZe5XWUsRmOw) | - | - |
 | [第11回：クラス（演習）](./docs/11/exercise_class.ipynb) | - | 11/16 | 11/17公開 |
-| 第12回：データ分析入門（講義） | 準備中 | - | - |
-| 第13回：データ分析入門（演習）  | - | 11/29 | 11/30公開 |
-| 第14回：機械学習入門（講義） | 準備中 | - | - |
-| 第15回：機械学習入門（演習）  | - | 11/29 | 11/30公開 |
+| [第12回：データ分析入門（講義）](./docs/12/introduction_to_data_analysis.ipynb) | [Play](https://hiroshimauniv-my.sharepoint.com/:v:/g/personal/furui_hiroshima-u_ac_jp/EVhXseGA509KtQULb9BNQf0B-iKPfXAKELolNSjMzQhnFw) | - | - |
+| [第13回：データ分析入門（演習）](./docs/13/exercise_introduction_to_data_analysis.ipynb)  | - | 11/29 | 11/30公開 |
+| [第14回：機械学習入門（講義）](./docs/14/introduction_to_machine_learning.ipynb) | 準備中 | - | - |
+| [第15回：機械学習入門（演習）](./docs/15/exercise_introduction_to_machine_learning.ipynb)  | - | 11/29 | 11/30公開 |
 
 ## 講義スケジュール
 
@@ -82,7 +84,8 @@
 ## 成績評価
 
 - 毎週の課題提出状況と，期末試験の成績を踏まえて総合的に評価します．
-- 期末試験の詳細は試験日程が近づいたら記載します．
+- <del>期末試験の詳細は試験日程が近づいたら記載します．</del>
+- 期末試験の詳細は [こちら](./docs/exam.md) を確認してください．
 
 
 ## 開講情報
