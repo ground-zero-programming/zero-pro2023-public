@@ -46,7 +46,7 @@
 | [第11回：クラス（演習）](./docs/11/exercise_class.ipynb) | - | 11/16 | 11/17公開 |
 | [第12回：データ分析入門（講義）](./docs/12/introduction_to_data_analysis.ipynb) | [Play](https://hiroshimauniv-my.sharepoint.com/:v:/g/personal/furui_hiroshima-u_ac_jp/EVhXseGA509KtQULb9BNQf0B-iKPfXAKELolNSjMzQhnFw) | - | - |
 | [第13回：データ分析入門（演習）](./docs/13/exercise_introduction_to_data_analysis.ipynb)  | - | 11/29 | 11/30公開 |
-| [第14回：機械学習入門（講義）](./docs/14/introduction_to_machine_learning.ipynb) | 準備中 | - | - |
+| [第14回：機械学習入門（講義）](./docs/14/introduction_to_machine_learning.ipynb) | [Play](https://hiroshimauniv-my.sharepoint.com/:v:/g/personal/furui_hiroshima-u_ac_jp/ERBn3JxlYOBOpCq6sQG6JpUBkUWBVm_kcmg2GTQy19Z4hg) | - | - |
 | [第15回：機械学習入門（演習）](./docs/15/exercise_introduction_to_machine_learning.ipynb)  | - | 11/29 | 11/30公開 |
 
 ## 講義スケジュール
