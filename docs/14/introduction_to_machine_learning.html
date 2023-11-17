@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>第14回：機械学習入門（講義） &#8212; ゼロから始めるプログラミング</title>
   
@@ -567,8 +567,8 @@ f_{\theta}(x) = ax + b,
 <p>以下のセルでデータをダウンロードする．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>wget https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/14/data.npy
-<span class="o">!</span>wget https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/14/target.npy
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>wget<span class="w"> </span>https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/14/data.npy
+<span class="o">!</span>wget<span class="w"> </span>https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/14/target.npy
 </pre></div>
 </div>
 </div>
@@ -720,10 +720,10 @@ f_{\theta}(x) = ax + b,
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x10b301340&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x110882610&gt;
 </pre></div>
 </div>
-<img alt="../../_images/c9661663244879fb1d727cefd7bc05cf453bdc255f853401963e0d24c04680e8.png" src="../../_images/c9661663244879fb1d727cefd7bc05cf453bdc255f853401963e0d24c04680e8.png" />
+<img alt="../../_images/4b498271db090dd6928c3cde252a6b543ad6478f0fe73c96f9567f784573d161.png" src="../../_images/4b498271db090dd6928c3cde252a6b543ad6478f0fe73c96f9567f784573d161.png" />
 </div>
 </div>
 <p>データの可視化を見ると正の相関があり，<code class="docutils literal notranslate"><span class="pre">X</span></code> と <code class="docutils literal notranslate"><span class="pre">y</span></code> の間には，最初の例のように，<span class="math notranslate nohighlight">\(y=ax+b\)</span> の関係性が潜んでいるように思える．</p>
@@ -739,7 +739,7 @@ f_{\theta}(x) = ax + b,
 </div>
 </div>
 </div>
-<p>インポートした <code class="docutils literal notranslate"><span class="pre">LinearRegression</span></code> クラスをインスタンス化し，(<code class="docutils literal notranslate"><span class="pre">X,y</span></code>)のペアをインスタンスメソッド <code class="docutils literal notranslate"><span class="pre">fit</span></code> に渡すと計算できる．クラスについては <a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2023-public/docs/10/application.html">第10回の講義</a> を復習されたい．</p>
+<p>インポートした <code class="docutils literal notranslate"><span class="pre">LinearRegression</span></code> クラスをインスタンス化し，(<code class="docutils literal notranslate"><span class="pre">X,y</span></code>)のペアをインスタンスメソッド <code class="docutils literal notranslate"><span class="pre">fit</span></code> に渡すと計算できる．クラスについては <a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2023-public/docs/10/application.html#">第10回の講義</a> を復習されたい．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">reg</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
@@ -782,10 +782,10 @@ f_{\theta}(x) = ax + b,
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x17fc52e80&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x142ce2450&gt;
 </pre></div>
 </div>
-<img alt="../../_images/9c7b72e5c187564365222e9f0774d366f6fe1cb03e6f886645de6c8fd9986882.png" src="../../_images/9c7b72e5c187564365222e9f0774d366f6fe1cb03e6f886645de6c8fd9986882.png" />
+<img alt="../../_images/751599d4782ab8afa271153cdcaeffe97721a648c96144c08a2a560e06297bd2.png" src="../../_images/751599d4782ab8afa271153cdcaeffe97721a648c96144c08a2a560e06297bd2.png" />
 </div>
 </div>
 <p>このように，ライブラリを使うと非常に簡単に機械学習・データ分析のアルゴリズムを利用することができ，とても便利な仕組みである．しかし，ここまでの用意されたデータを元にセルを実行しただけではプログラミング感なくゼロから始めるプログラミングの講義が終了してしまう．そこで，前述の線形回帰のプログラムを，</p>
@@ -1141,12 +1141,12 @@ f_{\theta}(x) = ax + b,
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1.10374549, 1.03467791, 1.07621846, 1.13687815, 1.07731974,
-       1.36985877, 1.28300129, 1.5830173 , 1.79315194, 1.64252429,
-       1.66477717, 1.69815716, 1.77102587, 1.94009739, 2.12319764,
-       1.89572213, 2.11302998, 2.27413029, 2.27678493, 2.30529707,
-       2.38014809, 2.63439799, 2.50552988, 2.59533964, 2.74157181,
-       2.54307317, 2.74054949, 2.84884131, 2.98703906, 3.14728146])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1.02645206, 1.29053955, 1.09433496, 1.14674096, 1.2429996 ,
+       1.26594141, 1.28877699, 1.66098227, 1.57814726, 1.74159607,
+       1.69629442, 1.84944193, 1.6859959 , 1.89208304, 2.02640626,
+       2.01839625, 1.89749567, 2.16405232, 2.03899923, 2.23420778,
+       2.32315908, 2.30203494, 2.48234996, 2.65203492, 2.51586603,
+       2.57464548, 2.68736548, 2.97441112, 3.05868761, 3.03697256])
 </pre></div>
 </div>
 </div>
@@ -1191,7 +1191,7 @@ f_{\theta}(x) = ax + b,
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[-2.89274924 -2.53245662  0.15072956]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[-0.58084881  0.86101441  0.35489055]
 </pre></div>
 </div>
 </div>
@@ -1245,7 +1245,7 @@ f_{\theta}(x) = ax + b,
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>傾き a = [[2.169814]], 切片 b = [0.91283809]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>傾き a = [[2.00870387]], 切片 b = [1.03151077]
 </pre></div>
 </div>
 </div>
@@ -1269,15 +1269,15 @@ f_{\theta}(x) = ax + b,
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x284619760&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x147f8b110&gt;
 </pre></div>
 </div>
-<img alt="../../_images/f59d7a6e311b8a441b6f0dd681bdd2274c2628dc37afb865693640ac81fbecbc.png" src="../../_images/f59d7a6e311b8a441b6f0dd681bdd2274c2628dc37afb865693640ac81fbecbc.png" />
+<img alt="../../_images/993d060a53572e698997f33d1d0705b9ed0a5926230bb627accdb1db06e5590e.png" src="../../_images/993d060a53572e698997f33d1d0705b9ed0a5926230bb627accdb1db06e5590e.png" />
 </div>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><code class="docutils literal notranslate"><span class="pre">LinearRegression</span></code>クラスの中身はScikit-Learnの<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html">リファレンスページ</a>へアクセスし，ページ中にある <a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/36958fb24/sklearn/linear_model/_base.py#L529">SOURCE</a> からGitHub上で公開されているコードを見ることができる．中身を見るとこれまでの講義で学んだ<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2023-public/docs/04/conditional_branch.html">条件分岐</a>，<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2023-public/docs/08/functions_and_scope.html">関数</a>，<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2023-public/docs/10/application.html">クラス</a>といった機能で書かれていることがわかる．ゼロから学ぶプログラミングが，このようなプログラムを読み解けるヒントになるだけでなく，自身でソフトウェアを開発して公開するきっかけになれば幸いである．</p>
+<p><code class="docutils literal notranslate"><span class="pre">LinearRegression</span></code>クラスの中身はScikit-Learnの<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html">リファレンスページ</a>へアクセスし，ページ中にある <a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/36958fb24/sklearn/linear_model/_base.py#L529">SOURCE</a> からGitHub上で公開されているコードを見ることができる．中身を見るとこれまでの講義で学んだ<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2023-public/docs/04/conditional_branch.html">条件分岐</a>，<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2023-public/docs/08/functions_and_scope.html">関数</a>，<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2023-public/docs/10/application.html#">クラス</a>といった機能で書かれていることがわかる．ゼロから学ぶプログラミングが，このようなプログラムを読み解けるヒントになるだけでなく，自身でソフトウェアを開発して公開するきっかけになれば幸いである．</p>
 </div>
 </section>
 <section id="np-newaxis">
@@ -1648,8 +1648,8 @@ J(\mathbf{W})=\sum_{i=1}^N e_i^2=\sum_{i=1}^N\left(y_i-\left(w_0+w_1 x_{i 1}+w_2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[1.99562943],
-       [1.00441378]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[1.86471905],
+       [1.06516949]])
 </pre></div>
 </div>
 </div>
@@ -1663,7 +1663,7 @@ J(\mathbf{W})=\sum_{i=1}^N e_i^2=\sum_{i=1}^N\left(y_i-\left(w_0+w_1 x_{i 1}+w_2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1.99562943])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1.86471905])
 </pre></div>
 </div>
 </div>
@@ -1676,7 +1676,7 @@ J(\mathbf{W})=\sum_{i=1}^N e_i^2=\sum_{i=1}^N\left(y_i-\left(w_0+w_1 x_{i 1}+w_2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1.00441378])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1.06516949])
 </pre></div>
 </div>
 </div>
@@ -1689,7 +1689,7 @@ J(\mathbf{W})=\sum_{i=1}^N e_i^2=\sum_{i=1}^N\left(y_i-\left(w_0+w_1 x_{i 1}+w_2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[2.169814]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[2.00870387]])
 </pre></div>
 </div>
 </div>
@@ -1701,7 +1701,7 @@ J(\mathbf{W})=\sum_{i=1}^N e_i^2=\sum_{i=1}^N\left(y_i-\left(w_0+w_1 x_{i 1}+w_2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.91283809])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1.03151077])
 </pre></div>
 </div>
 </div>
@@ -1728,10 +1728,10 @@ J(\mathbf{W})=\sum_{i=1}^N e_i^2=\sum_{i=1}^N\left(y_i-\left(w_0+w_1 x_{i 1}+w_2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x2846b57f0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x15253de10&gt;
 </pre></div>
 </div>
-<img alt="../../_images/290de86a995f3b80f268e6719e1876e5086bc45ee60259b617715e4c11f5475c.png" src="../../_images/290de86a995f3b80f268e6719e1876e5086bc45ee60259b617715e4c11f5475c.png" />
+<img alt="../../_images/60bec1af1f5386f7f541d08ae2dfcafc9ef94e1ea0dc470447431ddc7b5d48d9.png" src="../../_images/60bec1af1f5386f7f541d08ae2dfcafc9ef94e1ea0dc470447431ddc7b5d48d9.png" />
 </div>
 </div>
 <p>Scikit-Learnを用いずに線形回帰を実行することができた．Pythonは機械学習だけでなく高度なアルゴリズムを提供するライブラリが提供されており便利なプログラミング言語である．しかしながら，言い換えると，機能の使い方さえ調べてしまえば，中身のアルゴリズムを理解せずとも誰でも利用できてしまう．Pythonの第一歩としてのゼロからはじめるプログラミングにおいては，これらの機能を利用できるだけ十分なレベルに到達しているが，受講者の皆さんにはぜひ内部のアルゴリズムまで調べて，<strong>ライブラリを用いず</strong> 自身で <strong>ゼロから</strong> 実装してみることを推奨する．このような経験は線形代数・微積分・確率統計など大学数学を学ぶモチベーションとなるだけでなく，皆さんがこれから学ぶプログラミング，数学，加えて専門科目の理解をより深めてくれるはずである．</p>
