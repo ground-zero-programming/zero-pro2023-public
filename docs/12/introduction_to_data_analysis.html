@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>第12回：データ分析入門（講義） &#8212; ゼロから始めるプログラミング</title>
   
@@ -506,19 +506,19 @@ document.write(`
 </pre></div>
 </div>
 <p>以下のように，大量のパッケージが表示されるはずだ．</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Package<span class="w">                       </span>Version
------------------------------<span class="w"> </span>----------------------
-absl-py<span class="w">                       </span><span class="m">1</span>.3.0
-aeppl<span class="w">                         </span><span class="m">0</span>.0.33
-aesara<span class="w">                        </span><span class="m">2</span>.7.9
-aiohttp<span class="w">                       </span><span class="m">3</span>.8.3
-aiosignal<span class="w">                     </span><span class="m">1</span>.2.0
-alabaster<span class="w">                     </span><span class="m">0</span>.7.12
-albumentations<span class="w">                </span><span class="m">1</span>.2.1
-altair<span class="w">                        </span><span class="m">4</span>.2.0
-appdirs<span class="w">                       </span><span class="m">1</span>.4.4
-arviz<span class="w">                         </span><span class="m">0</span>.12.1
-…<span class="w"> </span><span class="o">(</span>以下省略<span class="o">)</span><span class="w"> </span>…
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Package                       Version
+----------------------------- ----------------------
+absl-py                       <span class="m">1</span>.3.0
+aeppl                         <span class="m">0</span>.0.33
+aesara                        <span class="m">2</span>.7.9
+aiohttp                       <span class="m">3</span>.8.3
+aiosignal                     <span class="m">1</span>.2.0
+alabaster                     <span class="m">0</span>.7.12
+albumentations                <span class="m">1</span>.2.1
+altair                        <span class="m">4</span>.2.0
+appdirs                       <span class="m">1</span>.4.4
+arviz                         <span class="m">0</span>.12.1
+… <span class="o">(</span>以下省略<span class="o">)</span> …
 </pre></div>
 </div>
 </div>
@@ -533,7 +533,7 @@ arviz<span class="w">                         </span><span class="m">0</span>.12
 <p><strong>pip</strong> などのパッケージ管理システムを利用することで，PyPlに登録されているライブラリやパッケージをダウンロード＆インストールすることができる．
 Google Colaboratoryにおける外部ライブラリも，このpipというシステムによって管理されている．</p>
 <p>Google Colaboratoryで新しい外部ライブラリをインストールしたい場合，コードセルにて次のコマンドを実行すれば良い．</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>!pip<span class="w"> </span>install<span class="w"> </span>ライブラリ名
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>!pip install ライブラリ名
 </pre></div>
 </div>
 </div>
@@ -575,7 +575,7 @@ Google Colaboratoryにおける外部ライブラリも，このpipというシ�
 </div>
 <p>ほかにも <code class="docutils literal notranslate"><span class="pre">math</span></code> モジュールには様々な関数が用意されている．
 以下に，いくつかの例を示す．</p>
-<table class="table">
+<table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>関数</p></th>
 <th class="head"><p>説明</p></th>
@@ -756,8 +756,8 @@ Seriesは1次元（列形式）のデータ，DataFrameは2次元（行列形式
 以下のセルを実行すると，<code class="docutils literal notranslate"><span class="pre">data</span></code> フォルダの中に <code class="docutils literal notranslate"><span class="pre">ice_cream.csv</span></code> というファイルがダウンロードされる．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>mkdir<span class="w"> </span>data
-<span class="o">!</span>wget<span class="w"> </span>-P<span class="w"> </span>data<span class="w"> </span>https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/12/data/ice_cream.csv
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>mkdir data
+<span class="o">!</span>wget -P data https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/12/data/ice_cream.csv
 </pre></div>
 </div>
 </div>
@@ -1882,7 +1882,7 @@ x軸に日付，y軸に客数を指定してグラフを描画すればよい．
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/8b88046ef4ae9afb814ea694923028ee57d3fb278376a76dc71c7784e46432cb.png" src="../../_images/8b88046ef4ae9afb814ea694923028ee57d3fb278376a76dc71c7784e46432cb.png" />
+<img alt="../../_images/a29b14d1f1741168b7c0c01e54b935db965f80c3a47a7f92b69b5d61074f4f8b.png" src="../../_images/a29b14d1f1741168b7c0c01e54b935db965f80c3a47a7f92b69b5d61074f4f8b.png" />
 </div>
 </div>
 <p>なお，セルの最後に実行されたオブジェクトの出力表示を無くすため，これ以降グラフを描画する際は，セルの最後の行にセミコロン（<code class="docutils literal notranslate"><span class="pre">;</span></code>）をつけていることに注意されたい（セミコロンが無くてもグラフ自体は問題なく描画できる）．</p>
@@ -1895,7 +1895,7 @@ x軸に日付，y軸に客数を指定してグラフを描画すればよい．
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/c8acdbfd6e2b7c23241eb9346ef9bec674a5c5a40616623db72846c0fd5316f3.png" src="../../_images/c8acdbfd6e2b7c23241eb9346ef9bec674a5c5a40616623db72846c0fd5316f3.png" />
+<img alt="../../_images/f2a702e21217eebf859eb08d1656a1f5ae40ea5d62fa61a857ce9de7fbf4710e.png" src="../../_images/f2a702e21217eebf859eb08d1656a1f5ae40ea5d62fa61a857ce9de7fbf4710e.png" />
 </div>
 </div>
 <p>引数 <code class="docutils literal notranslate"><span class="pre">marker</span></code> に違う値を指定するとマーカの形状が変わる．</p>
@@ -1906,7 +1906,7 @@ x軸に日付，y軸に客数を指定してグラフを描画すればよい．
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/d43afc57a5c38e59c01d6f7f15514562d5615527860ee468c97b076726158ffc.png" src="../../_images/d43afc57a5c38e59c01d6f7f15514562d5615527860ee468c97b076726158ffc.png" />
+<img alt="../../_images/4a228c7d03c44a1f4b566faf94ef196f8f3ebfba94bd59f8f81831d6acdcd81c.png" src="../../_images/4a228c7d03c44a1f4b566faf94ef196f8f3ebfba94bd59f8f81831d6acdcd81c.png" />
 </div>
 </div>
 <p>他にも，<code class="docutils literal notranslate"><span class="pre">linestyle</span></code> で線の種類を変えたり，<code class="docutils literal notranslate"><span class="pre">color</span></code> で線の色を変更したりできる．</p>
@@ -1917,7 +1917,7 @@ x軸に日付，y軸に客数を指定してグラフを描画すればよい．
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/ca033385809d083f3c58fc1b572ec61bdbf2aac09c04884ecade581bd57ff110.png" src="../../_images/ca033385809d083f3c58fc1b572ec61bdbf2aac09c04884ecade581bd57ff110.png" />
+<img alt="../../_images/41be8b55ec12ca729d6065aa936d6f33d87cf9a1f76f76358265543192be6dbe.png" src="../../_images/41be8b55ec12ca729d6065aa936d6f33d87cf9a1f76f76358265543192be6dbe.png" />
 </div>
 </div>
 <p>それぞれの引数で指定可能な値は以下を参照されたい．</p>
@@ -1938,7 +1938,7 @@ x軸に日付，y軸に客数を指定してグラフを描画すればよい．
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/5e6534c8733f41d2e8c18358b69b63341cd196e016eb3376946f83b6526470c6.png" src="../../_images/5e6534c8733f41d2e8c18358b69b63341cd196e016eb3376946f83b6526470c6.png" />
+<img alt="../../_images/eca88055d60d82a7ef03108082a2193e34c5570617e5dc4f2dbcb78bee89fc37.png" src="../../_images/eca88055d60d82a7ef03108082a2193e34c5570617e5dc4f2dbcb78bee89fc37.png" />
 </div>
 </div>
 <div class="attention dropdown admonition">
@@ -1962,7 +1962,7 @@ japanize_matplotlib.japanize()
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/9e1f1402abac028dfda8bb47d13a1cc94a5cd01efef41cca0fced7c67f8e74c6.png" src="../../_images/9e1f1402abac028dfda8bb47d13a1cc94a5cd01efef41cca0fced7c67f8e74c6.png" />
+<img alt="../../_images/1706b99c420cd2909c7db41493cb87a30564a03fb5dc00fb55c542c43b29369a.png" src="../../_images/1706b99c420cd2909c7db41493cb87a30564a03fb5dc00fb55c542c43b29369a.png" />
 </div>
 </div>
 <p>さて，では「日付と客数」のグラフと，「日付と最高気温」のグラフを交互に見てみましょう．
@@ -1991,7 +1991,7 @@ japanize_matplotlib.japanize()
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/9071323373a0503d49718ceaabdc090f2bf782d15057d32e443851de50a690a9.png" src="../../_images/9071323373a0503d49718ceaabdc090f2bf782d15057d32e443851de50a690a9.png" />
+<img alt="../../_images/17cf4ad0058e2d62ff8bbf74bc84efffe6f3b68e49c24c71a538fe879d32f1c7.png" src="../../_images/17cf4ad0058e2d62ff8bbf74bc84efffe6f3b68e49c24c71a538fe879d32f1c7.png" />
 </div>
 </div>
 <p>このグラフをみると，最高気温と客数の間には，右肩上がりの関係があるように見える．
@@ -2016,7 +2016,7 @@ japanize_matplotlib.japanize()
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/077b0e7624aa20a6310bfbbe7286e89ae1d7ca9bf18d660c8ec46c28f08981a2.png" src="../../_images/077b0e7624aa20a6310bfbbe7286e89ae1d7ca9bf18d660c8ec46c28f08981a2.png" />
+<img alt="../../_images/68b230ece8eb0193a92cdc47c53cbbe745f5b4e06eba6f6a00b991c4a23f69b9.png" src="../../_images/68b230ece8eb0193a92cdc47c53cbbe745f5b4e06eba6f6a00b991c4a23f69b9.png" />
 </div>
 </div>
 <div class="admonition- admonition">
@@ -2053,7 +2053,7 @@ japanize_matplotlib.japanize()
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/c248034c8047eb5cda55e025729455eb382010b60fd55d2a0be1c826550c1f5b.png" src="../../_images/c248034c8047eb5cda55e025729455eb382010b60fd55d2a0be1c826550c1f5b.png" />
+<img alt="../../_images/b19ad2d7f43a7bacb2a4598b35cc547cdcb3f983bbc5ebe7f27c8a8a57a131cd.png" src="../../_images/b19ad2d7f43a7bacb2a4598b35cc547cdcb3f983bbc5ebe7f27c8a8a57a131cd.png" />
 </div>
 </div>
 <p>このグラフより，客数は300人から450人くらいの範囲に主に分布しており，客数が500人を超えることは稀であることがわかる．</p>
@@ -2069,7 +2069,7 @@ japanize_matplotlib.japanize()
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/7f7e99c570f56515987e85082daca4e25643a05a0e3d5215b4540af1e26938b5.png" src="../../_images/7f7e99c570f56515987e85082daca4e25643a05a0e3d5215b4540af1e26938b5.png" />
+<img alt="../../_images/db2c9e21b408eb481cdbfc8b218ebb38dbcfdc2a1deb2edba507c1580c9871ff.png" src="../../_images/db2c9e21b408eb481cdbfc8b218ebb38dbcfdc2a1deb2edba507c1580c9871ff.png" />
 </div>
 </div>
 </section>
@@ -2093,7 +2093,7 @@ japanize_matplotlib.japanize()
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/188a5e32a21ec1b27b5abed3fb3807bb46d4dbf293dbabe2df5fc323e683abe0.png" src="../../_images/188a5e32a21ec1b27b5abed3fb3807bb46d4dbf293dbabe2df5fc323e683abe0.png" />
+<img alt="../../_images/4232b9e934d7c879f4b88e6f14252077ee80827f4113b50f20f07656fadda863.png" src="../../_images/4232b9e934d7c879f4b88e6f14252077ee80827f4113b50f20f07656fadda863.png" />
 </div>
 </div>
 <p>上記からわかるように，線グラフを重ねたい場合は同じセル内で単純に <code class="docutils literal notranslate"><span class="pre">plt.plot</span></code> を複数実行すればよいことがわかる．
@@ -2112,7 +2112,7 @@ japanize_matplotlib.japanize()
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/c2409c7fb8eb93d4d5af5f57d35323db671fcc50671593a2b7b86d2e300fd55a.png" src="../../_images/c2409c7fb8eb93d4d5af5f57d35323db671fcc50671593a2b7b86d2e300fd55a.png" />
+<img alt="../../_images/4d51766c9576460528b40ea3cf46967823496d23657741209178b86a29de0e99.png" src="../../_images/4d51766c9576460528b40ea3cf46967823496d23657741209178b86a29de0e99.png" />
 </div>
 </div>
 </section>
@@ -2136,7 +2136,7 @@ r = \frac{\sum_{i=1}^N (x_i - \bar{x}) (y_i - \bar{y})}{\sqrt{\sum_{i=1}^N(x_i -
 <div class="admonition- admonition">
 <p class="admonition-title">相関係数の目安</p>
 <p>相関係数の値と相関の強さに関して，よく使われる目安は以下の通りである．</p>
-<table class="table">
+<table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>相関係数の絶対値</p></th>
 <th class="head"><p>目安</p></th>

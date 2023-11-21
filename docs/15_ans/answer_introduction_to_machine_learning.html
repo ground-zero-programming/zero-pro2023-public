@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>第15回：機械学習入門（演習） &#8212; ゼロから始めるプログラミング</title>
   
@@ -464,18 +464,18 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>mkdir<span class="w"> </span>data
-<span class="o">!</span>wget<span class="w"> </span>-P<span class="w"> </span>data<span class="w"> </span>https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/15/data/data_N.npy
-<span class="o">!</span>wget<span class="w"> </span>-P<span class="w"> </span>data<span class="w"> </span>https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/15/data/target_N.npy
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>mkdir data
+<span class="o">!</span>wget -P data https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/15/data/data_N.npy
+<span class="o">!</span>wget -P data https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/15/data/target_N.npy
 
-<span class="o">!</span>wget<span class="w"> </span>-P<span class="w"> </span>data<span class="w"> </span>https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/15/data/data_noise_scale.npy
-<span class="o">!</span>wget<span class="w"> </span>-P<span class="w"> </span>data<span class="w"> </span>https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/15/data/target_noise_scale.npy
+<span class="o">!</span>wget -P data https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/15/data/data_noise_scale.npy
+<span class="o">!</span>wget -P data https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/15/data/target_noise_scale.npy
 
-<span class="o">!</span>wget<span class="w"> </span>-P<span class="w"> </span>data<span class="w"> </span>https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/15/data/data_a.npy
-<span class="o">!</span>wget<span class="w"> </span>-P<span class="w"> </span>data<span class="w"> </span>https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/15/data/target_a.npy
+<span class="o">!</span>wget -P data https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/15/data/data_a.npy
+<span class="o">!</span>wget -P data https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/15/data/target_a.npy
 
-<span class="o">!</span>wget<span class="w"> </span>-P<span class="w"> </span>data<span class="w"> </span>https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/15/data/data_b.npy
-<span class="o">!</span>wget<span class="w"> </span>-P<span class="w"> </span>data<span class="w"> </span>https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/15/data/target_b.npy
+<span class="o">!</span>wget -P data https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/15/data/data_b.npy
+<span class="o">!</span>wget -P data https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/15/data/target_b.npy
 </pre></div>
 </div>
 </div>
@@ -557,10 +557,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x12a676210&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x11fcbb3d0&gt;
 </pre></div>
 </div>
-<img alt="../../_images/64769e0c561621d3e1cc48734341ecaa71ef0c23e8f446023ca0d0e5e1d5ff6b.png" src="../../_images/64769e0c561621d3e1cc48734341ecaa71ef0c23e8f446023ca0d0e5e1d5ff6b.png" />
+<img alt="../../_images/e7c39ff2bf0bc0727460f80d13ea864315985dc59705d6f9f673c5a39419a816.png" src="../../_images/e7c39ff2bf0bc0727460f80d13ea864315985dc59705d6f9f673c5a39419a816.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -578,10 +578,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x12a787fd0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x11fd65130&gt;
 </pre></div>
 </div>
-<img alt="../../_images/1b7923d5f18b39ec7f3cd012a1bd59b217b7849bea2c96f81aa7eb822cdb5e74.png" src="../../_images/1b7923d5f18b39ec7f3cd012a1bd59b217b7849bea2c96f81aa7eb822cdb5e74.png" />
+<img alt="../../_images/64d39588cffd4a20a46e12d570503f3cf9a774e0109107da54fa26465ac43509.png" src="../../_images/64d39588cffd4a20a46e12d570503f3cf9a774e0109107da54fa26465ac43509.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -599,10 +599,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x12a733650&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x11ff6cf70&gt;
 </pre></div>
 </div>
-<img alt="../../_images/879e6b59c04d87dba0424c6650eb6256878432c18c42df5170e0d310f3f0ece3.png" src="../../_images/879e6b59c04d87dba0424c6650eb6256878432c18c42df5170e0d310f3f0ece3.png" />
+<img alt="../../_images/758be1ba77dc72a2ec83dadc55ee8d5bf5d09b687256afe8485ea9933b12db4b.png" src="../../_images/758be1ba77dc72a2ec83dadc55ee8d5bf5d09b687256afe8485ea9933b12db4b.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -620,10 +620,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x12a7f3650&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x11ffeba30&gt;
 </pre></div>
 </div>
-<img alt="../../_images/9708bce974babb0a5d3264772f84ef5b8a53231cc757107d3ac990d83362eaff.png" src="../../_images/9708bce974babb0a5d3264772f84ef5b8a53231cc757107d3ac990d83362eaff.png" />
+<img alt="../../_images/2bd8508582c094b0c700385f03f11c7d3f94b124a2a8eaf14e3e18951dee5178.png" src="../../_images/2bd8508582c094b0c700385f03f11c7d3f94b124a2a8eaf14e3e18951dee5178.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -641,10 +641,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x12a6bb910&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x121074250&gt;
 </pre></div>
 </div>
-<img alt="../../_images/bb7dcb3cdf57ed3ab8a0356f285c4f73b0a79c7f5dc8ec5e4ddea8e016e980c6.png" src="../../_images/bb7dcb3cdf57ed3ab8a0356f285c4f73b0a79c7f5dc8ec5e4ddea8e016e980c6.png" />
+<img alt="../../_images/14b2189a957074df62650dba9ab30aaf4c7ab309e62904766efb769eb7b0d614.png" src="../../_images/14b2189a957074df62650dba9ab30aaf4c7ab309e62904766efb769eb7b0d614.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -706,10 +706,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x14ca83650&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x173e35f40&gt;
 </pre></div>
 </div>
-<img alt="../../_images/b12c741e33f18fac3d3c463848d4911ba83b968461df8e68b6aa0f13925ee07b.png" src="../../_images/b12c741e33f18fac3d3c463848d4911ba83b968461df8e68b6aa0f13925ee07b.png" />
+<img alt="../../_images/6af746b1c006d59a58a9fed5dcb16be94608f3940fe303fc747da4d5e9e5d996.png" src="../../_images/6af746b1c006d59a58a9fed5dcb16be94608f3940fe303fc747da4d5e9e5d996.png" />
 </div>
 </div>
 </section>
@@ -923,10 +923,10 @@ eigenvectors=[[0.         0.70710678]
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x15a138ad0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x1743a75e0&gt;
 </pre></div>
 </div>
-<img alt="../../_images/a79072d6c1fc45990887a9fa9a901abbcd5fb1e067c3ccbddfbd0cc1f0d29c22.png" src="../../_images/a79072d6c1fc45990887a9fa9a901abbcd5fb1e067c3ccbddfbd0cc1f0d29c22.png" />
+<img alt="../../_images/847668cbaaefcb33ce3048e06ff7a38a150ca1e09ef5f8871f13783c0426667c.png" src="../../_images/847668cbaaefcb33ce3048e06ff7a38a150ca1e09ef5f8871f13783c0426667c.png" />
 </div>
 </div>
 </section>
